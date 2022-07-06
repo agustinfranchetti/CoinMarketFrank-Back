@@ -1,0 +1,17 @@
+version: '3.10'
+
+services:
+  mysql:
+    image: mysql
+    platform: linux/x86_64
+    ports:
+      - 3306:3306
+    container_name: "cmf-mysql-container"
+    restart: always
+    volumes:
+      - ~/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=123123
+      - MYSQL_PASSWORD=123123
+      - MYSQL_USER=francho
+      - MYSQL_DATABASE=cmf_database
