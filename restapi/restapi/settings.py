@@ -86,7 +86,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "cmf_database",
         "USER": os.getenv("MYSQL_USER"),
-        "PASSWORD": "123123",
+        "PASSWORD": os.getenv("MYSQL_PASSWORD"),
         "HOST": "127.0.0.1",
         "PORT": "3306",
     }
